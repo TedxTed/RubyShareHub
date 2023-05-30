@@ -1,3 +1,7 @@
+# frozen_string_literal: true
+
+# lib/topic.rb
+
 require_relative 'serial'
 
 module ShareHub
@@ -21,7 +25,7 @@ module ShareHub
       comments << comment
     end
 
-    def get_comments
+    def list_comments
       list_object(comments)
     end
   end

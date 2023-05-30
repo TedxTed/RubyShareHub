@@ -1,3 +1,7 @@
+# frozen_string_literal: true
+
+# lib/serial.rb
+
 module ShareHub
   module Serial
     def list_object(list)

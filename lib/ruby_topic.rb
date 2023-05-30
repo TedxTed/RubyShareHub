@@ -1,3 +1,7 @@
+# frozen_string_literal: true
+
+# lib/ruby_topic.rb
+
 require_relative 'topic'
 
 module ShareHub
@@ -6,7 +10,7 @@ module ShareHub
       super(name: name)
       @category = 'ruby'
     end
-    
+
     def add_comment(comment)
       @comments << "ruby: #{comment}"
     end

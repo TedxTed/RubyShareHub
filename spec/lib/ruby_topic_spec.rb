@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'ruby_topic'
 
 RSpec.describe ShareHub::RubyTopic do
@@ -37,7 +39,7 @@ RSpec.describe ShareHub::RubyTopic do
       comment2 = 'Interesting!'
       topic.add_comment(comment1)
       topic.add_comment(comment2)
-      expect(topic.get_comments).to eq(list_comment)
+      expect(topic.list_comments).to eq(list_comment)
     end
   end
 end
