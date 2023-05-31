@@ -19,6 +19,14 @@ RSpec.describe ShareHub::RubyTopic do
     end
   end
 
+  describe 'about class' do
+    it 'class and superclass' do
+      expect(topic.class).to eq(ShareHub::RubyTopic)
+      expect(topic.class.superclass).to eq(ShareHub::Topic)
+      expect(topic.class.class).to eq(Class)
+    end
+  end
+
   describe '#approve_topic' do
     it 'approves a topic' do
       topic.approve_topic

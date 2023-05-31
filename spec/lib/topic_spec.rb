@@ -25,6 +25,14 @@ RSpec.describe ShareHub::Topic do
     end
   end
 
+  describe 'about class' do
+    it 'class and superclass' do
+      expect(topic.class).to eq(ShareHub::Topic)
+      expect(topic.class.class).to eq(Class)
+      expect(topic.class.superclass).to eq(Object)
+    end
+  end
+
   describe '#add_comment' do
     it 'adds a comment to a topic' do
       topic.add_comment('Great topic!')
